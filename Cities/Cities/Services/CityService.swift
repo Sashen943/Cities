@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol CityService {
+    func fetchCities(completion: @escaping (Result<[City], Error>) -> ())
+}

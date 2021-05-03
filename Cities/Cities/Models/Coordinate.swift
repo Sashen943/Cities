@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Coord: Codable {
+    var lon: Double
+    var lat: Double
+}
+

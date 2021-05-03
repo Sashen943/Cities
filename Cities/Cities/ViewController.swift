@@ -11,7 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let service = CityServiceImplementation()
+        DispatchQueue.global(qos: .background).async {
+            service.fetchCities { (result) in
+                DispatchQueue.main.async {
+                    print(result)
+                }
+            }
+        }
     }
 
 
