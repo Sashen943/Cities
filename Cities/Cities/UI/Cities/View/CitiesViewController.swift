@@ -42,8 +42,9 @@ extension CitiesViewController: CitiesView {
         self.citiesTableView.reloadData()
     }
     
-    func navigateToCityScreen(_ city: City) {
-        
+    func navigateToCityScreen() {
+        let cityViewController = CityViewController()
+        self.navigate(to: cityViewController)
     }
     
     func configureTableView() {
@@ -82,7 +83,7 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        viewModel.didSelectCity(at: indexPath.row)
     }
     
 }

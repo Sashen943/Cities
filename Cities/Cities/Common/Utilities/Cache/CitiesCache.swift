@@ -13,6 +13,7 @@ class CitiesCache {
     
     static let shared = CitiesCache()
     var cities: [City] = []
+    var selectedCityId: Int = 0
     
     // MARK: Constructor(s)
     
@@ -22,6 +23,10 @@ class CitiesCache {
     
     func cacheCities(_ cities: [City]) {
         self.cities = cities
+    }
+    
+    func setSelectedCity(_ cityId: Int) {
+        self.selectedCityId = cityId
     }
     
 }

@@ -66,6 +66,11 @@
 		66B65CA32641A3C8005A34C2 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65CA22641A3C8005A34C2 /* CityViewModel.swift */; };
 		66B65CA82641A3D5005A34C2 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65CA72641A3D5005A34C2 /* CityRepository.swift */; };
 		66B65CAD2641A3E4005A34C2 /* CityRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65CAC2641A3E4005A34C2 /* CityRepositoryImplementation.swift */; };
+		66CA30232641BFE5000C3780 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CA30222641BFE5000C3780 /* CityView.swift */; };
+		66CA30272641CA18000C3780 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65CA22641A3C8005A34C2 /* CityViewModel.swift */; };
+		66CA302B2641CA1E000C3780 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65CA72641A3D5005A34C2 /* CityRepository.swift */; };
+		66CA302F2641CA20000C3780 /* CityRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65CAC2641A3E4005A34C2 /* CityRepositoryImplementation.swift */; };
+		66CA30332641CA24000C3780 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CA30222641BFE5000C3780 /* CityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +134,7 @@
 		66B65CA22641A3C8005A34C2 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		66B65CA72641A3D5005A34C2 /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
 		66B65CAC2641A3E4005A34C2 /* CityRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepositoryImplementation.swift; sourceTree = "<group>"; };
+		66CA30222641BFE5000C3780 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +390,7 @@
 			children = (
 				66B65C992641A3B8005A34C2 /* CityViewController.swift */,
 				66B65C9A2641A3B8005A34C2 /* CityViewController.xib */,
+				66CA30222641BFE5000C3780 /* CityView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -558,6 +565,7 @@
 				665AE848264090F300905329 /* CitiesView.swift in Sources */,
 				665AE7F0264076CF00905329 /* CityServiceImplementation.swift in Sources */,
 				66B65C3426419127005A34C2 /* AsynchronousRunnerImplementation.swift in Sources */,
+				66CA30232641BFE5000C3780 /* CityView.swift in Sources */,
 				665AE7E62640764400905329 /* City.swift in Sources */,
 				665AE79F2640738800905329 /* AppDelegate.swift in Sources */,
 				665AE8312640903E00905329 /* BaseViewController.swift in Sources */,
@@ -585,16 +593,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				665AE8762640AD0A00905329 /* CitiesViewModelTests.swift in Sources */,
+				66CA30272641CA18000C3780 /* CityViewModel.swift in Sources */,
 				665AE89A2640AE2D00905329 /* CitiesViewController.swift in Sources */,
 				665AE8862640AE0700905329 /* City.swift in Sources */,
 				665AE8922640AE1000905329 /* CityServiceImplementation.swift in Sources */,
 				665AE87A2640AD4100905329 /* CitiesViewModel.swift in Sources */,
 				66B65C9C2641A3B8005A34C2 /* CityViewController.swift in Sources */,
 				665AE8AA2640AE4200905329 /* BaseViewController.swift in Sources */,
+				66CA302B2641CA1E000C3780 /* CityRepository.swift in Sources */,
 				66B65C1126417F73005A34C2 /* CitiesRepositoryImplementation.swift in Sources */,
 				66B65C4426419C93005A34C2 /* CitiesCache.swift in Sources */,
 				665AE8A62640AE3E00905329 /* LoadingIndicator.swift in Sources */,
 				66B65C2F26419106005A34C2 /* AsynchronousProvider.swift in Sources */,
+				66CA302F2641CA20000C3780 /* CityRepositoryImplementation.swift in Sources */,
 				66B65C3526419127005A34C2 /* AsynchronousRunnerImplementation.swift in Sources */,
 				665AE8822640AD5500905329 /* CitiesRepository.swift in Sources */,
 				66B65C29264190AB005A34C2 /* AsynchronousRunner.swift in Sources */,
@@ -606,6 +617,7 @@
 				665AE8AE2640AE4400905329 /* BaseView.swift in Sources */,
 				665AE88E2640AE0D00905329 /* CityService.swift in Sources */,
 				665AE89E2640AE3600905329 /* CityTableViewCell.swift in Sources */,
+				66CA30332641CA24000C3780 /* CityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

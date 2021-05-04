@@ -101,5 +101,10 @@ class CitiesViewModel {
         }
     }
     
+    func didSelectCity(at index: Int) {
+        CitiesCache.shared.setSelectedCity(filteredCities[index]._id)
+        self.view.navigateToCityScreen()
+    }
+    
     
 }

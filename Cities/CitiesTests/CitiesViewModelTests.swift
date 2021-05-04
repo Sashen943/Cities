@@ -93,7 +93,7 @@ class MockedCitiesView: BaseViewController, CitiesView {
     
     func reloadTableView() {}
     
-    func navigateToCityScreen(_ city: City) {}
+    func navigateToCityScreen() {}
     
     func configureTableView() {}
     

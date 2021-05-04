@@ -21,6 +21,7 @@ class CityRepositoryImplementation: CityRepository {
         if cities.count > 0 {
             guard let city = cities.first(where: {$0._id == cityId }) else {
                 completion(.failure(CITY_NOT_FOUND_ERROR))
+                return
             }
             completion(.success(city))
         } else {
