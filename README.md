@@ -1,5 +1,5 @@
 # Cities
-Application that shows list of cities and displays each city on a map.
+Application that shows list of cities and displays each city on a map. Filtering on 200000+ objects.
 
 ## How to run
 
