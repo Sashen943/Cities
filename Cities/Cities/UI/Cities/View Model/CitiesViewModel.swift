@@ -14,10 +14,11 @@ class CitiesViewModel {
     private let title = "Cities"
     private let fetchCitiesError = "Something went wrong."
     private let fetchCitiesErrorButtonTitle = "Retry"
+    private let serachBarPlaceholder = "Search for a city"
     
     // MARK: Dependencies
     
-    var repository: CitiesRepository = CitiesRepositoryImplementation()
+    private var repository: CitiesRepository
     private var view: CitiesView
     
     // MARK: Attribute(s)
@@ -27,8 +28,9 @@ class CitiesViewModel {
     
     // MARK: Constructor(s)
     
-    init(view: CitiesView) {
+    init(view: CitiesView, repository: CitiesRepository) {
         self.view = view
+        self.repository = repository
     }
     
     // MARK: Method(s)
@@ -36,28 +38,29 @@ class CitiesViewModel {
     func configureUI() {
         self.view.setTitle(title)
         self.view.configureTableView()
-        self.view.configureSearchBar()
+        self.view.configureSearchBar(serachBarPlaceholder)
     }
     
     /// Complexity: O(n log n)
     
     @objc func fetchCities() {
         self.view.showLoadingIndicator()
-        DispatchQueue.global(qos: .background).async {
+        AsynchronousProvider.runOnConcurrent({
             self.repository.fetchCities { [weak self] (result) in
                 switch result {
                 case .success(let cities):
                     let sortedCities = cities.sorted{ $0.name < $1.name }
+                    CitiesCache.shared.cacheCities(sortedCities)
                     self?.handleThatFetchCitiesSucceeds(sortedCities)
                 case .failure(_):
                     self?.handleThatFetchCitiesFails()
                 }
             }
-        }
+        }, .userInitiated)
     }
     
     private func handleThatFetchCitiesSucceeds(_ cities: [City]) {
-        DispatchQueue.main.async {
+        AsynchronousProvider.runOnMain {
             self.cities = cities
             self.filteredCities = cities
             self.view.reloadTableView()
@@ -66,7 +69,7 @@ class CitiesViewModel {
     }
     
     private func handleThatFetchCitiesFails() {
-        DispatchQueue.main.async {
+        AsynchronousProvider.runOnMain {
             self.view.hideLoadingIndicator()
             self.view.showErrorViewWithRetryAction(self.fetchCitiesError,
                                                    #selector(self.fetchCities),
@@ -76,22 +79,21 @@ class CitiesViewModel {
     }
     
     func filterCities(_ searchText: String?) {
-        DispatchQueue.global(qos: .userInitiated).async {
+        AsynchronousProvider.runOnConcurrent ({
             self.performFilter(searchText) { [weak self] (cities) in
                 self?.handleThatFilteringHasFinished(cities)
             }
-        }
+        }, .userInteractive)
     }
     
     private func handleThatFilteringHasFinished(_ cities: [City]) {
-        DispatchQueue.main.async {
+        AsynchronousProvider.runOnMain {
             self.filteredCities = cities
             self.view.reloadTableView()
-            self.view.hideLoadingIndicator()
         }
     }
-
-    func performFilter(_ searchText: String?, completion: @escaping ([City]) -> ()) {
+    
+    private func performFilter(_ searchText: String?, completion: @escaping ([City]) -> ()) {
         if let searchText = searchText, searchText.count > 0 {
             completion(self.cities.filter { $0.name.starts(with: searchText) })
         } else {

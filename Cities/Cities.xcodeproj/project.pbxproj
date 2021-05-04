@@ -48,6 +48,24 @@
 		665AE8A62640AE3E00905329 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665AE80A26408E9800905329 /* LoadingIndicator.swift */; };
 		665AE8AA2640AE4200905329 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665AE8302640903E00905329 /* BaseViewController.swift */; };
 		665AE8AE2640AE4400905329 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665AE8352640904E00905329 /* BaseView.swift */; };
+		66B65C1126417F73005A34C2 /* CitiesRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665AE8512640915E00905329 /* CitiesRepositoryImplementation.swift */; };
+		66B65C222641907E005A34C2 /* DummyAsynchronousRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C212641907E005A34C2 /* DummyAsynchronousRunner.swift */; };
+		66B65C232641907E005A34C2 /* DummyAsynchronousRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C212641907E005A34C2 /* DummyAsynchronousRunner.swift */; };
+		66B65C28264190AB005A34C2 /* AsynchronousRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C27264190AB005A34C2 /* AsynchronousRunner.swift */; };
+		66B65C29264190AB005A34C2 /* AsynchronousRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C27264190AB005A34C2 /* AsynchronousRunner.swift */; };
+		66B65C2E26419106005A34C2 /* AsynchronousProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C2D26419106005A34C2 /* AsynchronousProvider.swift */; };
+		66B65C2F26419106005A34C2 /* AsynchronousProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C2D26419106005A34C2 /* AsynchronousProvider.swift */; };
+		66B65C3426419127005A34C2 /* AsynchronousRunnerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C3326419127005A34C2 /* AsynchronousRunnerImplementation.swift */; };
+		66B65C3526419127005A34C2 /* AsynchronousRunnerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C3326419127005A34C2 /* AsynchronousRunnerImplementation.swift */; };
+		66B65C4326419C93005A34C2 /* CitiesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C4226419C93005A34C2 /* CitiesCache.swift */; };
+		66B65C4426419C93005A34C2 /* CitiesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C4226419C93005A34C2 /* CitiesCache.swift */; };
+		66B65C9B2641A3B8005A34C2 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C992641A3B8005A34C2 /* CityViewController.swift */; };
+		66B65C9C2641A3B8005A34C2 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65C992641A3B8005A34C2 /* CityViewController.swift */; };
+		66B65C9D2641A3B8005A34C2 /* CityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66B65C9A2641A3B8005A34C2 /* CityViewController.xib */; };
+		66B65C9E2641A3B8005A34C2 /* CityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66B65C9A2641A3B8005A34C2 /* CityViewController.xib */; };
+		66B65CA32641A3C8005A34C2 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65CA22641A3C8005A34C2 /* CityViewModel.swift */; };
+		66B65CA82641A3D5005A34C2 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65CA72641A3D5005A34C2 /* CityRepository.swift */; };
+		66B65CAD2641A3E4005A34C2 /* CityRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B65CAC2641A3E4005A34C2 /* CityRepositoryImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +119,16 @@
 		665AE8602640993700905329 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		665AE8612640993700905329 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		665AE8752640AD0A00905329 /* CitiesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewModelTests.swift; sourceTree = "<group>"; };
+		66B65C212641907E005A34C2 /* DummyAsynchronousRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyAsynchronousRunner.swift; sourceTree = "<group>"; };
+		66B65C27264190AB005A34C2 /* AsynchronousRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousRunner.swift; sourceTree = "<group>"; };
+		66B65C2D26419106005A34C2 /* AsynchronousProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousProvider.swift; sourceTree = "<group>"; };
+		66B65C3326419127005A34C2 /* AsynchronousRunnerImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousRunnerImplementation.swift; sourceTree = "<group>"; };
+		66B65C4226419C93005A34C2 /* CitiesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesCache.swift; sourceTree = "<group>"; };
+		66B65C992641A3B8005A34C2 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		66B65C9A2641A3B8005A34C2 /* CityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityViewController.xib; sourceTree = "<group>"; };
+		66B65CA22641A3C8005A34C2 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		66B65CA72641A3D5005A34C2 /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
+		66B65CAC2641A3E4005A34C2 /* CityRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepositoryImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +222,7 @@
 		665AE7D72640743300905329 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				66B65C3D26419C35005A34C2 /* City */,
 				665AE85B2640970A00905329 /* Entry */,
 				665AE7FC26407EE700905329 /* Cities */,
 			);
@@ -212,6 +241,8 @@
 		665AE7D92640744E00905329 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				66B65C4126419C5C005A34C2 /* Cache */,
+				66B65C39264197EE005A34C2 /* Multithreading */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -327,6 +358,61 @@
 			path = CityTableViewCell;
 			sourceTree = "<group>";
 		};
+		66B65C39264197EE005A34C2 /* Multithreading */ = {
+			isa = PBXGroup;
+			children = (
+				66B65C212641907E005A34C2 /* DummyAsynchronousRunner.swift */,
+				66B65C27264190AB005A34C2 /* AsynchronousRunner.swift */,
+				66B65C2D26419106005A34C2 /* AsynchronousProvider.swift */,
+				66B65C3326419127005A34C2 /* AsynchronousRunnerImplementation.swift */,
+			);
+			path = Multithreading;
+			sourceTree = "<group>";
+		};
+		66B65C3D26419C35005A34C2 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				66B65C4026419C4A005A34C2 /* Repository */,
+				66B65C3F26419C40005A34C2 /* View Model */,
+				66B65C3E26419C3C005A34C2 /* View */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		66B65C3E26419C3C005A34C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66B65C992641A3B8005A34C2 /* CityViewController.swift */,
+				66B65C9A2641A3B8005A34C2 /* CityViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66B65C3F26419C40005A34C2 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				66B65CA22641A3C8005A34C2 /* CityViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		66B65C4026419C4A005A34C2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				66B65CA72641A3D5005A34C2 /* CityRepository.swift */,
+				66B65CAC2641A3E4005A34C2 /* CityRepositoryImplementation.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		66B65C4126419C5C005A34C2 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				66B65C4226419C93005A34C2 /* CitiesCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -437,6 +523,7 @@
 				665AE81026408EB900905329 /* LoadingIndicator.xib in Resources */,
 				665AE7A82640738900905329 /* Assets.xcassets in Resources */,
 				665AE7A62640738800905329 /* Main.storyboard in Resources */,
+				66B65C9D2641A3B8005A34C2 /* CityViewController.xib in Resources */,
 				665AE80126408E7600905329 /* ErrorView.xib in Resources */,
 				665AE840264090E500905329 /* CitiesViewController.xib in Resources */,
 			);
@@ -446,6 +533,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B65C9E2641A3B8005A34C2 /* CityViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,19 +551,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B65CAD2641A3E4005A34C2 /* CityRepositoryImplementation.swift in Sources */,
 				665AE80B26408E9800905329 /* LoadingIndicator.swift in Sources */,
 				665AE7A32640738800905329 /* EntryViewController.swift in Sources */,
 				665AE8622640993700905329 /* CityTableViewCell.swift in Sources */,
 				665AE848264090F300905329 /* CitiesView.swift in Sources */,
 				665AE7F0264076CF00905329 /* CityServiceImplementation.swift in Sources */,
+				66B65C3426419127005A34C2 /* AsynchronousRunnerImplementation.swift in Sources */,
 				665AE7E62640764400905329 /* City.swift in Sources */,
 				665AE79F2640738800905329 /* AppDelegate.swift in Sources */,
 				665AE8312640903E00905329 /* BaseViewController.swift in Sources */,
+				66B65CA82641A3D5005A34C2 /* CityRepository.swift in Sources */,
+				66B65C222641907E005A34C2 /* DummyAsynchronousRunner.swift in Sources */,
 				665AE7E02640755600905329 /* CityService.swift in Sources */,
+				66B65C4326419C93005A34C2 /* CitiesCache.swift in Sources */,
 				665AE7A12640738800905329 /* SceneDelegate.swift in Sources */,
 				665AE7EB2640767A00905329 /* Coordinate.swift in Sources */,
+				66B65C2E26419106005A34C2 /* AsynchronousProvider.swift in Sources */,
 				665AE84D2640912100905329 /* CitiesRepository.swift in Sources */,
+				66B65C28264190AB005A34C2 /* AsynchronousRunner.swift in Sources */,
 				665AE83F264090E500905329 /* CitiesViewController.swift in Sources */,
+				66B65C9B2641A3B8005A34C2 /* CityViewController.swift in Sources */,
+				66B65CA32641A3C8005A34C2 /* CityViewModel.swift in Sources */,
 				665AE8362640904E00905329 /* BaseView.swift in Sources */,
 				665AE857264091D800905329 /* CitiesViewModel.swift in Sources */,
 				665AE8522640915E00905329 /* CitiesRepositoryImplementation.swift in Sources */,
@@ -492,9 +589,16 @@
 				665AE8862640AE0700905329 /* City.swift in Sources */,
 				665AE8922640AE1000905329 /* CityServiceImplementation.swift in Sources */,
 				665AE87A2640AD4100905329 /* CitiesViewModel.swift in Sources */,
+				66B65C9C2641A3B8005A34C2 /* CityViewController.swift in Sources */,
 				665AE8AA2640AE4200905329 /* BaseViewController.swift in Sources */,
+				66B65C1126417F73005A34C2 /* CitiesRepositoryImplementation.swift in Sources */,
+				66B65C4426419C93005A34C2 /* CitiesCache.swift in Sources */,
 				665AE8A62640AE3E00905329 /* LoadingIndicator.swift in Sources */,
+				66B65C2F26419106005A34C2 /* AsynchronousProvider.swift in Sources */,
+				66B65C3526419127005A34C2 /* AsynchronousRunnerImplementation.swift in Sources */,
 				665AE8822640AD5500905329 /* CitiesRepository.swift in Sources */,
+				66B65C29264190AB005A34C2 /* AsynchronousRunner.swift in Sources */,
+				66B65C232641907E005A34C2 /* DummyAsynchronousRunner.swift in Sources */,
 				665AE8962640AE2700905329 /* EntryViewController.swift in Sources */,
 				665AE8A22640AE3A00905329 /* ErrorView.swift in Sources */,
 				665AE87E2640AD4500905329 /* CitiesView.swift in Sources */,

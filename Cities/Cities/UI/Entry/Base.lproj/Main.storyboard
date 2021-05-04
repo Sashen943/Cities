@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,8 +14,35 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZOL-et-AF2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD2-f3-QmU">
+                                <rect key="frame" x="82" y="790" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.2005927861" green="0.399618268" blue="0.79933422799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="3ff-X7-au4"/>
+                                    <constraint firstAttribute="height" constant="40" id="wrv-Wx-Yiz"/>
+                                </constraints>
+                                <state key="normal" title="Load cities">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadCitiesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8NQ-bj-5HZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZOL-et-AF2" secondAttribute="bottom" id="0tM-NZ-zrT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fD2-f3-QmU" secondAttribute="bottom" constant="32" id="5sk-kF-VnN"/>
+                            <constraint firstItem="fD2-f3-QmU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KhN-nt-vLf"/>
+                            <constraint firstItem="ZOL-et-AF2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ysw-SX-6Fk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZOL-et-AF2" secondAttribute="trailing" id="wSt-dL-PaJ"/>
+                            <constraint firstItem="ZOL-et-AF2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x2A-sW-xv5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BRM-TB-6et"/>
                 </viewController>
@@ -44,8 +70,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="logo" width="1024" height="1024"/>
     </resources>
 </document>

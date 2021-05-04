@@ -11,7 +11,8 @@ class CitiesViewController: BaseViewController {
     
     // MARK: Dependencies
     
-    private lazy var viewModel = CitiesViewModel(view: self)
+    private lazy var viewModel = CitiesViewModel(view: self,
+                                                 repository: CitiesRepositoryImplementation())
     
     // MARK: IBOutlet(s)
     
@@ -26,6 +27,11 @@ class CitiesViewController: BaseViewController {
         self.viewModel.fetchCities()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
 }
 
 // MARK: CitiesView Extension
@@ -36,7 +42,7 @@ extension CitiesViewController: CitiesView {
         self.citiesTableView.reloadData()
     }
     
-    func didUpdateSearchValue(_ value: String) {
+    func navigateToCityScreen(_ city: City) {
         
     }
     
@@ -48,7 +54,8 @@ extension CitiesViewController: CitiesView {
                                       forCellReuseIdentifier: CityTableViewCell.identifier)
     }
     
-    func configureSearchBar() {
+    func configureSearchBar(_ placeholder: String) {
+        self.searchBar.placeholder = "Search a city"
         self.searchBar.delegate = self
     }
     
@@ -88,5 +95,5 @@ extension CitiesViewController: UISearchBarDelegate {
         let text = searchBar.text
         self.viewModel.filterCities(text)
     }
-
+    
 }

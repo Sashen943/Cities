@@ -19,28 +19,47 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1qm-0g-Y73">
-                    <rect key="frame" x="32" y="408" width="350" height="90"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Qh-TW-p1O">
+                    <rect key="frame" x="57" y="303" width="300" height="300"/>
                     <subviews>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7BF-Nb-jqC">
-                            <rect key="frame" x="0.0" y="0.0" width="350" height="37"/>
-                        </activityIndicatorView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This might take a while... it seems we're trying to deserialise 100 000+ of JSON 🥲" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFg-6S-HxH">
-                            <rect key="frame" x="0.0" y="49" width="350" height="41"/>
-                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1qm-0g-Y73">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7BF-Nb-jqC">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="37"/>
+                                </activityIndicatorView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFg-6S-HxH">
+                                    <rect key="frame" x="0.0" y="49" width="300" height="251"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="This might take a while... it seems we're trying to deserialise 209 557  json objects  🥲">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
                     </subviews>
-                </stackView>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="3dZ-Jb-J6S"/>
+                        <constraint firstItem="1qm-0g-Y73" firstAttribute="leading" secondItem="5Qh-TW-p1O" secondAttribute="leading" id="Hox-H5-3am"/>
+                        <constraint firstAttribute="height" constant="300" id="Yzh-22-0Ip"/>
+                        <constraint firstItem="1qm-0g-Y73" firstAttribute="top" secondItem="5Qh-TW-p1O" secondAttribute="top" id="hI3-Cc-U2f"/>
+                        <constraint firstAttribute="bottom" secondItem="1qm-0g-Y73" secondAttribute="bottom" id="ruL-YC-r0G"/>
+                        <constraint firstAttribute="trailing" secondItem="1qm-0g-Y73" secondAttribute="trailing" id="ywX-aw-PND"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="1qm-0g-Y73" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="BpF-zk-FQf"/>
-                <constraint firstItem="1qm-0g-Y73" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Bvo-c5-kbj"/>
-                <constraint firstAttribute="trailing" secondItem="1qm-0g-Y73" secondAttribute="trailing" constant="32" id="JRL-1k-bn5"/>
-                <constraint firstItem="1qm-0g-Y73" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="gfF-dm-uop"/>
+                <constraint firstItem="5Qh-TW-p1O" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="MMx-6U-5tc"/>
+                <constraint firstItem="5Qh-TW-p1O" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="qt5-gh-IEA"/>
             </constraints>
             <point key="canvasLocation" x="-16" y="98"/>
         </view>

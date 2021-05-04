@@ -9,7 +9,7 @@ import Foundation
 
 protocol CitiesView: BaseViewController {
     func reloadTableView()
-    func didUpdateSearchValue(_ value: String)
+    func navigateToCityScreen(_ city: City)
     func configureTableView()
-    func configureSearchBar()
+    func configureSearchBar(_ placeholder: String)
 }
